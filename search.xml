@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>python的安装以及编辑器的使用</title>
+      <link href="/post/9ca8836d.html"/>
+      <url>/post/9ca8836d.html</url>
+      
+        <content type="html"><![CDATA[<h3 id="1-python安装"><a href="#1-python安装" class="headerlink" title="1.python安装"></a>1.python安装</h3><blockquote><p>点击链接下载python-3.7.0rc1-amd64.exe <a href="https://www.aliyundrive.com/s/9wwW1Xsbrpn">https://www.aliyundrive.com/s/9wwW1Xsbrpn</a></p></blockquote><h3 id="2-双击打开按照图示操作"><a href="#2-双击打开按照图示操作" class="headerlink" title="2.双击打开按照图示操作"></a>2.双击打开按照图示操作</h3><blockquote><p>红色标注均要选</p></blockquote><p><img src="https://picgo123.oss-cn-beijing.aliyuncs.com/img/image-20221130165116992.png" alt="image-20221130165116992"></p><p><img src="https://picgo123.oss-cn-beijing.aliyuncs.com/img/image-20221130165144131.png" alt="image-20221130165144131"></p><p><img src="https://picgo123.oss-cn-beijing.aliyuncs.com/img/image-20221130165301929.png" alt="image-20221130165301929"></p><h3 id="3-测试是否安装成功"><a href="#3-测试是否安装成功" class="headerlink" title="3.测试是否安装成功"></a>3.测试是否安装成功</h3><p><img src="https://picgo123.oss-cn-beijing.aliyuncs.com/img/image-20221130165447133.png" alt="image-20221130165447133"></p><p><code>如果在命令行中输入python出现如下错误</code></p><p><img src="https://picgo123.oss-cn-beijing.aliyuncs.com/img/image-20221130165622977.png" alt="image-20221130165622977"></p><h3 id="4-手动配置Python"><a href="#4-手动配置Python" class="headerlink" title="4. 手动配置Python"></a>4. 手动配置Python</h3><blockquote><p>注意：如果在安装过程中，已经勾选了 Add Python 3.7 to PATH 选项，并且在 cmd 命令模式下输入 python 指令 不报错，就不需要再手动的配置Python </p></blockquote><p>​         </p><p>&#96;&#96;&#96;右键 此电脑 –&gt; 选择 属性&#96;&#96;</p><p><img src="https://picgo123.oss-cn-beijing.aliyuncs.com/img/image-20221130170031576.png" alt="image-20221130170031576"></p><p><code>选择 高级系统设置 --&gt; 环境变量 --&gt;找到并且双击 Path</code></p><p><img src="https://picgo123.oss-cn-beijing.aliyuncs.com/img/image-20221130170146104.png" alt="image-20221130170146104"></p><p><code>双击 Path ,在弹框里点击新建，找到Python的安装目录，把路径添加进去</code></p><p><img src="https://picgo123.oss-cn-beijing.aliyuncs.com/img/image-20221130170318740.png" alt="image-20221130170318740"></p><p><code>这里新添加的路径 E:\python 是Python安装好以后， Python.exe 这个可执行文件所在的目录。</code></p><p><img src="https://picgo123.oss-cn-beijing.aliyuncs.com/img/image-20221130170432940.png" alt="image-20221130170432940"></p><h1 id="二-pip的使用"><a href="#二-pip的使用" class="headerlink" title="二.pip的使用"></a>二.pip的使用</h1><blockquote><p>pip 是一个现代的，通用的Python包管理工具。提供了对 Python 包的查找、下载、安装、卸载的功能，便 于我们对Python的资源包进行管理。</p></blockquote><h3 id="1-安装"><a href="#1-安装" class="headerlink" title="1.安装"></a>1.安装</h3><p>在安装Python时，会自动下载并且安装pip</p><h3 id="2-配置"><a href="#2-配置" class="headerlink" title="2.配置"></a>2.配置</h3><p><code>在windows命令行里，输入 pip -V 可以查看pip的版本。</code></p><p><img src="https://picgo123.oss-cn-beijing.aliyuncs.com/img/image-20221130175455519.png" alt="image-20221130175455519"></p><p>如果在命令行里，运行 pip -V ,出现如下提示</p><p><img src="https://picgo123.oss-cn-beijing.aliyuncs.com/img/image-20221130175534818.png" alt="image-20221130175534818"></p><p>可能是因为在安装python的过程中未勾选 Add Python 3.7 to PATH 选项，需要手动的配置pip的环境变量。</p><p><code>右键 此电脑 --&gt; 环境变量 --&gt;找到并且双击 Path --&gt;在弹窗里点击新建--&gt;找到pip的安装目录，把路径添加进 去。</code></p><p><img src="https://picgo123.oss-cn-beijing.aliyuncs.com/img/image-20221130175659293.png" alt="image-20221130175659293"></p><p><code>这里新添加的路径 E:\python\Scripts 是Python安装好以后， pip.exe 这个可执行文件所在的目录。</code></p><p><img src="https://picgo123.oss-cn-beijing.aliyuncs.com/img/image-20221130175742813.png" alt="image-20221130175742813"></p><h3 id="3-使用pip管理Python包"><a href="#3-使用pip管理Python包" class="headerlink" title="3.使用pip管理Python包"></a>3.使用pip管理Python包</h3><p>pip install &lt;包名&gt; 安装指定的包 </p><p>pip uninstall &lt;包名&gt; 删除指定的包 </p><p>pip list 显示已经安装的包 </p><p>pip freeze 显示已经安装的包，并且以指定的格式显示</p><h3 id="4-修改pip下载源"><a href="#4-修改pip下载源" class="headerlink" title="4.修改pip下载源"></a>4.修改pip下载源</h3><p>运行pip install 命令会从网站上下载指定的python包，默认是从 <a href="https://files.pythonhosted.org/">https://files.pythonhosted.org/</a> 网站上下 载。这是个国外的网站，遇到网络情况不好的时候，可能会下载失败，我们可以通过命令，修改pip现在软件时的 源。 格式:</p><p>pip install 包名 -i 国内源地址</p><p>示例: pip install ipython -i <a href="https://pypi.mirrors.ustc.edu.cn/simple/">https://pypi.mirrors.ustc.edu.cn/simple/</a> 就是从中国科技大学(ustc)的服务器 上下载requests(基于python的第三方web框架)</p><p>国内常用的pip下载源列表:</p><p>阿里云 <a href="http://mirrors.aliyun.com/pypi/simple/">http://mirrors.aliyun.com/pypi/simple/</a> </p><p>中国科技大学 <a href="https://pypi.mirrors.ustc.edu.cn/simple/">https://pypi.mirrors.ustc.edu.cn/simple/</a> </p><p>豆瓣(douban) <a href="http://pypi.douban.com/simple/">http://pypi.douban.com/simple/</a> </p><p>清华大学 <a href="https://pypi.tuna.tsinghua.edu.cn/simple/">https://pypi.tuna.tsinghua.edu.cn/simple/</a> </p><p>中国科学技术大学 <a href="http://pypi.mirrors.ustc.edu.cn/simple/">http://pypi.mirrors.ustc.edu.cn/simple/</a></p><h1 id="三-运行Python程序"><a href="#三-运行Python程序" class="headerlink" title="三.运行Python程序"></a>三.运行Python程序</h1><h3 id="1-终端运行"><a href="#1-终端运行" class="headerlink" title="1.终端运行"></a>1.终端运行</h3><p>1.直接在python解释器中书写代码</p><p><img src="https://picgo123.oss-cn-beijing.aliyuncs.com/img/image-20221130180200927.png" alt="image-20221130180200927"></p><p><code>退出python环境</code></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">exit()</span><br><span class="line">ctrl + z ==&gt;enter</span><br></pre></td></tr></table></figure><p>2.使用ipython解释器编写代码 使用pip命令，可以快速的安装IPython</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install ipython</span><br></pre></td></tr></table></figure><p><img src="https://picgo123.oss-cn-beijing.aliyuncs.com/img/image-20221130180533073.png" alt="image-20221130180533073"></p><h3 id="2-运行python文件"><a href="#2-运行python文件" class="headerlink" title="2.运行python文件"></a>2.运行python文件</h3><p>使用python指令运行后缀为.py的python文件</p><p><img src="https://picgo123.oss-cn-beijing.aliyuncs.com/img/image-20221130180655957.png" alt="image-20221130180655957"></p><h3 id="3-Pycharm"><a href="#3-Pycharm" class="headerlink" title="3.Pycharm"></a>3.Pycharm</h3><blockquote><p>下载地址<a href="https://www.aliyundrive.com/s/iFtKD2SuDJb">https://www.aliyundrive.com/s/iFtKD2SuDJb</a></p></blockquote><p><img src="https://picgo123.oss-cn-beijing.aliyuncs.com/img/image-20221130181715077.png" alt="image-20221130181715077"></p><p><code>编辑设置（全部选中）</code></p><p><img src="https://picgo123.oss-cn-beijing.aliyuncs.com/img/image-20221130181837973.png" alt="image-20221130181837973"></p><p><code>安装完成后双击</code></p><p><img src="https://picgo123.oss-cn-beijing.aliyuncs.com/img/image-20221130181938358.png" alt="image-20221130181938358"></p><p><code>设置主题</code></p><p><img src="https://picgo123.oss-cn-beijing.aliyuncs.com/img/image-20221130182126013.png" alt="image-20221130182126013"></p><p><code>启动软件</code></p><p><img src="https://picgo123.oss-cn-beijing.aliyuncs.com/img/image-20221130182424134.png" alt="image-20221130182424134"></p><h3 id="4-Pycharm的使用介绍"><a href="#4-Pycharm的使用介绍" class="headerlink" title="4.Pycharm的使用介绍"></a>4.Pycharm的使用介绍</h3><p>运行Pycharm,选择 Create New Project ,创建一个新的Python工程。</p><p><img src="https://picgo123.oss-cn-beijing.aliyuncs.com/img/image-20221130182508355.png" alt="image-20221130182508355"></p><p>选择’Pure Python’创建一个新的纯Python工程项目， Location 表示该项目的保存路径， Interpreter 用来 指定Python解释器的版本。</p><p><img src="https://picgo123.oss-cn-beijing.aliyuncs.com/img/image-20221130182544105.png" alt="image-20221130182544105"></p><p><code>右击项目，选择 New ，再选择 Python File</code></p><p><img src="https://picgo123.oss-cn-beijing.aliyuncs.com/img/image-20221130182636203.png" alt="image-20221130182636203"></p><p><code>在弹出的对话框中输入的文件名 HelloPython ，点击OK，表示创建一个Python程序的文本文件，文本文件后 缀名默认.py</code></p><p><img src="https://picgo123.oss-cn-beijing.aliyuncs.com/img/image-20221130182701278.png" alt="image-20221130182701278"></p><p>在新建的 01_xx.py 文件里，输入以下代码，并在空白处右键选择 Run 运行，表示输出 一段 ZTN教程字符串。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(&#x27;ZTN教程&#x27;)</span><br></pre></td></tr></table></figure><p><code>好用，帮助到了你,记得好评哦</code></p><p><code>你们的反馈与支持是作者坚持下去的最大动力!</code></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 标签1 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Python实现解析vip视频无广告</title>
+      <link href="/post/a99fcb1a.html"/>
+      <url>/post/a99fcb1a.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="pYthon项目实现在线解析全网vip视频"><a href="#pYthon项目实现在线解析全网vip视频" class="headerlink" title="pYthon项目实现在线解析全网vip视频"></a>pYthon项目实现在线解析全网vip视频</h1><blockquote><p>运行环境（python）</p></blockquote><h3 id="1-需要安装python-点击链接下载"><a href="#1-需要安装python-点击链接下载" class="headerlink" title="1.需要安装python.点击链接下载"></a>1.需要安装python.点击链接下载</h3><blockquote><p>python-3.7.0rc1-amd64.exe <a href="https://www.aliyundrive.com/s/9wwW1Xsbrpn">https://www.aliyundrive.com/s/9wwW1Xsbrpn</a> </p></blockquote><blockquote><p>详情看文章链接<a href="https://zzz2997.github.io/post/9ca8836d.html">https://zzz2997.github.io/post/9ca8836d.html</a></p></blockquote><h3 id="2-打开pycharm新建项目，名称可以随意写，右键新建-py文件如图所示"><a href="#2-打开pycharm新建项目，名称可以随意写，右键新建-py文件如图所示" class="headerlink" title="2.打开pycharm新建项目，名称可以随意写，右键新建.py文件如图所示"></a>2.打开pycharm新建项目，名称可以随意写，右键新建.py文件如图所示</h3><p><img src="https://picgo123.oss-cn-beijing.aliyuncs.com/img/image-20221127121040292.png" alt="image-20221127121040292"></p><h3 id="3-新建文件后将以下代码，点击右上角复制按钮，粘贴到这里"><a href="#3-新建文件后将以下代码，点击右上角复制按钮，粘贴到这里" class="headerlink" title="3.新建文件后将以下代码，点击右上角复制按钮，粘贴到这里"></a>3.新建文件后将以下代码，点击右上角复制按钮，粘贴到这里</h3><p><img src="https://picgo123.oss-cn-beijing.aliyuncs.com/img/image-20221127121404591.png" alt="image-20221127121404591"></p><h3 id="4-代码如下"><a href="#4-代码如下" class="headerlink" title="4.代码如下"></a>4.代码如下</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;&quot;&quot;&quot;&quot;&quot;</span></span><br><span class="line"><span class="comment"># import导入tkinter《模块名》as 重命名为tk</span></span><br><span class="line"><span class="keyword">import</span> tkinter <span class="keyword">as</span> tk</span><br><span class="line"><span class="keyword">import</span> webbrowser</span><br><span class="line"><span class="comment"># 创建一个窗口</span></span><br><span class="line">root = tk.Tk()</span><br><span class="line"><span class="comment"># 设置标题</span></span><br><span class="line">root.title(<span class="string">&quot;在线视频播放&quot;</span>)</span><br><span class="line"><span class="comment">#设置大小500&lt;宽&gt;x300&lt;高&gt;300+300距离屏幕边距</span></span><br><span class="line">root.geometry(<span class="string">&#x27;600x300+300+300&#x27;</span>)</span><br><span class="line"><span class="comment"># 读取图片</span></span><br><span class="line"><span class="comment"># img = tk.PhotoImage(file=&#x27;img\\微信.png&#x27;)</span></span><br><span class="line"><span class="comment"># pack()布局工具</span></span><br><span class="line"><span class="comment"># tk.Label(root, image= img).pack</span></span><br><span class="line"><span class="comment"># 设置文本标签框</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">show</span>():</span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    自定义一个函数 按钮触发事件</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;请输入解析地址&quot;</span>)</span><br><span class="line">    <span class="comment">#收到输入框的内容</span></span><br><span class="line">    word = input_var.get()</span><br><span class="line">    <span class="comment">#获取选择的是哪个接口</span></span><br><span class="line">    num = num_int_va.get()</span><br><span class="line">    <span class="keyword">if</span> num  == <span class="number">1</span>:</span><br><span class="line">        <span class="comment">#视频解析地址</span></span><br><span class="line">        link = <span class="string">&#x27;https://jx.qqwtt.com/?url=&#x27;</span> + word</span><br><span class="line">        <span class="comment">#打开网页进行播放</span></span><br><span class="line">        webbrowser.<span class="built_in">open</span>(link)</span><br><span class="line">    <span class="keyword">elif</span> num == <span class="number">2</span>:</span><br><span class="line">        link = <span class="string">&#x27;https://okjx.cc/?url=&#x27;</span> + word</span><br><span class="line">        webbrowser.<span class="built_in">open</span>(link)</span><br><span class="line">    <span class="keyword">elif</span> num == <span class="number">3</span>:</span><br><span class="line">        link = <span class="string">&#x27;https://svip.bljiex.cc/?url=&#x27;</span> + word</span><br><span class="line">        webbrowser.<span class="built_in">open</span>(link)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;您选择的接口是；&#x27;</span>,num)</span><br><span class="line">    <span class="built_in">print</span>(word)</span><br><span class="line">choose_frame = tk.LabelFrame(root)</span><br><span class="line"><span class="comment"># fill=&#x27;both&#x27;---填充pady=10 Y轴间距</span></span><br><span class="line">choose_frame.pack(fill=<span class="string">&#x27;both&#x27;</span>,pady=<span class="number">10</span>)</span><br><span class="line"><span class="comment"># 设置文本标签</span></span><br><span class="line">tk.Label(choose_frame, text=<span class="string">&#x27;选择接口&#x27;</span>, font=(<span class="string">&#x27;黑体&#x27;</span>,<span class="number">14</span>)).pack(side=tk.LEFT)</span><br><span class="line"><span class="comment"># 设置可变变量---》确定你点击哪个</span></span><br><span class="line">num_int_va = tk.IntVar()</span><br><span class="line"><span class="comment"># 默认设置选择第一个</span></span><br><span class="line">num_int_va.<span class="built_in">set</span>(<span class="number">1</span>)</span><br><span class="line"><span class="comment"># 设置单选按钮 side=tk.LEFT 靠左边，左对齐</span></span><br><span class="line">tk.Radiobutton(choose_frame, text=<span class="string">&#x27;1号通用vip引擎系统&#x27;</span>, variable=num_int_va, value=<span class="number">1</span>).pack(side=tk.LEFT,padx=<span class="number">5</span>)</span><br><span class="line">tk.Radiobutton(choose_frame, text=<span class="string">&#x27;2号通用vip引擎系统&#x27;</span>, variable=num_int_va, value=<span class="number">2</span>).pack(side=tk.LEFT,padx=<span class="number">5</span>)</span><br><span class="line">tk.Radiobutton(choose_frame, text=<span class="string">&#x27;3号通用vip引擎系统&#x27;</span>, variable=num_int_va, value=<span class="number">3</span>).pack(side=tk.LEFT,padx=<span class="number">5</span>)</span><br><span class="line"><span class="comment"># 设置第二个标签框</span></span><br><span class="line">input_frame = tk.LabelFrame(root)</span><br><span class="line">input_frame.pack(fill=<span class="string">&#x27;both&#x27;</span>,pady=<span class="number">10</span>)</span><br><span class="line"><span class="comment"># 设置播放地址的文本标签</span></span><br><span class="line">tk.Label(input_frame, text=<span class="string">&#x27;播放地址&#x27;</span>,font=(<span class="string">&#x27;黑体&#x27;</span>,<span class="number">14</span>)).pack(side=tk.LEFT)</span><br><span class="line"><span class="comment"># 设置可变变量</span></span><br><span class="line">input_var = tk.StringVar()</span><br><span class="line"><span class="comment"># 设置输入框</span></span><br><span class="line">tk.Entry(input_frame,width=<span class="number">100</span>, relief=<span class="string">&#x27;flat&#x27;</span>,textvariable=input_var).pack(side=tk.LEFT,fill=<span class="string">&#x27;both&#x27;</span>)</span><br><span class="line"><span class="comment"># 设置按钮</span></span><br><span class="line">tk.Button(root, text=<span class="string">&#x27;Go点击在线解析播放&#x27;</span>,font=(<span class="string">&#x27;黑体&#x27;</span>,<span class="number">14</span>),bg=<span class="string">&#x27;#449d44&#x27;</span>,relief=<span class="string">&#x27;flat&#x27;</span>,command=show).pack(fill=<span class="string">&#x27;both&#x27;</span>)</span><br><span class="line"><span class="comment"># 展示窗口</span></span><br><span class="line">root.mainloop()</span><br></pre></td></tr></table></figure><h3 id="5-如图粘贴好后，鼠标右击点击运行"><a href="#5-如图粘贴好后，鼠标右击点击运行" class="headerlink" title="5.如图粘贴好后，鼠标右击点击运行"></a>5.如图粘贴好后，鼠标右击点击运行</h3><p><img src="https://picgo123.oss-cn-beijing.aliyuncs.com/img/image-20221127121800678.png" alt="image-20221127121800678"></p><h3 id="6-网页打开在线观看网址搜索需要看电视剧或者电影等"><a href="#6-网页打开在线观看网址搜索需要看电视剧或者电影等" class="headerlink" title="6.网页打开在线观看网址搜索需要看电视剧或者电影等"></a>6.网页打开在线观看网址搜索需要看电视剧或者电影等</h3><p>复制蓝色标记的链接（例如我假如看这个我就复制这个），其他的一样都是在这个位置复制，只不过url不一样</p><p><img src="https://picgo123.oss-cn-beijing.aliyuncs.com/img/image-20221127122423763.png" alt="image-20221127122423763"></p><h3 id="7-粘贴到这个框里点击Go"><a href="#7-粘贴到这个框里点击Go" class="headerlink" title="7.粘贴到这个框里点击Go"></a>7.粘贴到这个框里点击Go</h3><blockquote><p>如果第一个接口解析失败可以用换第2个第3个</p></blockquote><p><img src="https://picgo123.oss-cn-beijing.aliyuncs.com/img/image-20221127122552050.png" alt="image-20221127122552050"></p><h3 id="8-如图点击Go会自动跳转，点播放就可以啦"><a href="#8-如图点击Go会自动跳转，点播放就可以啦" class="headerlink" title="8.如图点击Go会自动跳转，点播放就可以啦"></a>8.如图点击Go会自动跳转，点播放就可以啦</h3><p><img src="https://picgo123.oss-cn-beijing.aliyuncs.com/img/image-20221127123218704.png" alt="image-20221127123218704"></p><p><code>好用，帮助到了你,记得好评哦</code></p><p><code>你们的反馈与支持是作者坚持下去的最大动力!</code></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 标签1 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关于长安</title>
+      <link href="/post/56249419.html"/>
+      <url>/post/56249419.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="作者：长安"><a href="#作者：长安" class="headerlink" title="作者：长安"></a>作者：长安</h1><p>笔名：长安</p><p>心中有花闲开，天空就会澄清明亮，静下心，看一枚叶子无声飘落，看一场烟雨润泽万物，也都是美的，岁月漫长，不必想把生活的滋味都尝遍，也不要急于将风景看透，细水长流才是最深的感动。</p><p>作者联系方式</p><p>微信： ZTN777ZTN</p><p>QQ:  2997203824</p><p><img src="https://picgo123.oss-cn-beijing.aliyuncs.com/img/image-20221115175600073.png" alt="image-20221115175600073"></p><p><img src="https://picgo123.oss-cn-beijing.aliyuncs.com/img/image-20221115175621034.png" alt="image-20221115175621034"></p><h1 id=""><a href="#" class="headerlink" title=""></a></h1>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关于Typora破解</title>
+      <link href="/post/cabe10fa.html"/>
+      <url>/post/cabe10fa.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="关于Typora的自行破解秘钥"><a href="#关于Typora的自行破解秘钥" class="headerlink" title="关于Typora的自行破解秘钥"></a>关于Typora的自行破解秘钥</h1><blockquote><p>注意typora的版本必须是1.04以下，python3.0版本以上。（自行安装看B站教学）<br>在这里我为大家提供了typora1.04以下1.03版本<br>[百度网盘] (链接: <a href="https://pan.baidu.com/s/1tCASzexe4oL82zMD1DaSAA?pwd=an11">https://pan.baidu.com/s/1tCASzexe4oL82zMD1DaSAA?pwd=an11</a>) 提取码: an11 复制这段内容后打开百度网盘手机App，操作更方便哦) 提取码: an11 复制这段内容后打开百度网盘手机App，操作更方便哦</p></blockquote><h2 id="1-下载好这个文件后我们把它解压到当前目录下"><a href="#1-下载好这个文件后我们把它解压到当前目录下" class="headerlink" title="1.下载好这个文件后我们把它解压到当前目录下"></a>1.下载好这个文件后我们把它解压到当前目录下</h2><p><img src="https://img-blog.csdnimg.cn/538fd13af572470aaaa955779abcd6ba.png" alt="在这里插入图片描述"><br>之后先别动，我们点击链接下载Typora，下载好，点击.exe开始安装，这里直接默认即可，安装直接用默认路径，为什么要用默认，之后你就会发现好处，当然不排除一下技术伙伴喜欢挑战难度直接装别的盘。等安装好<br>然后运行cmd命令行（<strong>使用管理员身份运行</strong>）win+R打开输入cmd 回车<br><img src="https://img-blog.csdnimg.cn/87330ceb49cd4e7ea928ce5dbc05ec62.png" alt="在这里插入图片描述"><br>我们点击右面那个加号，编程powershell就是管理员身份<br><img src="https://img-blog.csdnimg.cn/2d2a78dd849e409b93a890427954314c.png" alt="在这里插入图片描述"></p><h2 id="2-我们打开那个文件，点击如图位置，成蓝色直接复制，打开终端在英文模式下输入（注意，我的压缩文件目录在E盘所以我先进E，你们在哪里进先输入什么）"><a href="#2-我们打开那个文件，点击如图位置，成蓝色直接复制，打开终端在英文模式下输入（注意，我的压缩文件目录在E盘所以我先进E，你们在哪里进先输入什么）" class="headerlink" title="2.我们打开那个文件，点击如图位置，成蓝色直接复制，打开终端在英文模式下输入（注意，我的压缩文件目录在E盘所以我先进E，你们在哪里进先输入什么）"></a>2.我们打开那个文件，点击如图位置，成蓝色直接复制，打开终端在英文模式下输入（注意，我的压缩文件目录在E盘所以我先进E，你们在哪里进先输入什么）</h2><p><img src="https://img-blog.csdnimg.cn/f10a9ac0d5b34ba6a2b830911573d95c.png" alt="在这里插入图片描述"><br>进入到对应盘后，输入cd 粘贴上一步让你复制的路径，然后左箭头&lt;—移动光标到我圈的那个位置，把E:\删除，然后点击enter<br>然后复制点击enter</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -r requirements.txt</span><br></pre></td></tr></table></figure><p><img src="https://img-blog.csdnimg.cn/1a0851753bf14c45bfb9af6564f9d509.png" alt="在这里插入图片描述"><br>等这样子就显示成功<br><img src="https://img-blog.csdnimg.cn/356d3bb538654e28a03e2f7d2949b804.png" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/b5befcc6330d479d814f41339354e534.png" alt="在这里插入图片描述"><br>&#x3D;&#x3D;注意&#x3D;&#x3D;<br>我在执行pip的时候出现点问题：ModuleNotFoundError: No module named ‘pip’<br><strong>解决方案：</strong><br>在命令行下执行两个命令就可以解决：<br>python -m ensurepip<br>python -m pip install –upgrade pip<br><strong>如果你没有出现这个问题可以进行下一步</strong></p><h2 id="3-找到Typora安装目录下的resources目录下的app-asar文件"><a href="#3-找到Typora安装目录下的resources目录下的app-asar文件" class="headerlink" title="3.找到Typora安装目录下的resources目录下的app.asar文件"></a>3.找到Typora安装目录下的resources目录下的app.asar文件</h2><p>默认应该是在 C:\Program Files\Typora\resources\app.asar<br>如果你的不是在C盘，找到你自己所对应的目录，替换下面” “里的路径就可以</p><h2 id="4-执行解包命名："><a href="#4-执行解包命名：" class="headerlink" title="4.执行解包命名："></a>4.执行解包命名：</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python typora.py &quot;C:\Program Files\Typora\resources\app.asar&quot; workstation\outfile\</span><br></pre></td></tr></table></figure><p>直接复制上面的即可，这就是我为什么在前面说安装到默认路径的好处<br>如果你的不是在C盘，找到你自己所对应的目录，替换这些 C:\Program Files\Typora\resources\app.asar就可以，&#x3D;&#x3D;记得双引号别删除了&#x3D;&#x3D;<br><img src="https://img-blog.csdnimg.cn/7aff0d8ee06b4897acafc94c501f4fd5.png" alt="在这里插入图片描述"></p><h2 id="5-用刚才解压的那个文件夹里面的example-patch-License-js这个-js文件"><a href="#5-用刚才解压的那个文件夹里面的example-patch-License-js这个-js文件" class="headerlink" title="5.用刚才解压的那个文件夹里面的example\patch\License.js这个.js文件"></a>5.用刚才解压的那个文件夹里面的<strong>example\patch\License.js</strong>这个.js文件</h2><p><img src="https://img-blog.csdnimg.cn/9012c8d201d74f27bfa9342a76b40192.png" alt="在这里插入图片描述"><br>点击复制文件然后替换掉（还是刚才解压的那个文件夹里面的）<strong>workstation\outfile\dec_app\License.js</strong>同名的.js文件<br><img src="https://img-blog.csdnimg.cn/bdd34fd501134f39ad25075fc17c1a6d.png" alt="在这里插入图片描述"><br>到这里直接点击替换粘贴替换即可</p><h2 id="6-回到cmd命令行执行命令，打包app-asar文件"><a href="#6-回到cmd命令行执行命令，打包app-asar文件" class="headerlink" title="6.回到cmd命令行执行命令，打包app.asar文件"></a>6.回到cmd命令行执行命令，打包app.asar文件</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python typora.py -u workstation\outfile\dec_app workstation\outappasar</span><br></pre></td></tr></table></figure><h2 id="7-将上一步中打包生成的-workstation-outappasar文件夹下的app-asar文件"><a href="#7-将上一步中打包生成的-workstation-outappasar文件夹下的app-asar文件" class="headerlink" title="7.将上一步中打包生成的\workstation\outappasar文件夹下的app.asar文件"></a>7.将上一步中打包生成的<strong>\workstation\outappasar</strong>文件夹下的app.asar文件</h2><p>复制然后打开C:\Program Files\Typora\resources\app.asar替换掉Typora的安装目录下的 <strong>resources</strong>文件夹下的app.asar文件<br><img src="https://img-blog.csdnimg.cn/18ff72e6352345ba97c41e0c13633ce4.png" alt="在这里插入图片描述"></p><h2 id="8-回到命令行执行命令（生成序列号）"><a href="#8-回到命令行执行命令（生成序列号）" class="headerlink" title="8.回到命令行执行命令（生成序列号）"></a>8.回到命令行执行命令（生成序列号）</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node example/keygen.js</span><br></pre></td></tr></table></figure><p><img src="https://img-blog.csdnimg.cn/53d500e917014793b5b834fc9a9dbb10.png" alt="在这里插入图片描述"><br>左下角打码的就是秘钥<br><img src="https://img-blog.csdnimg.cn/be5fdc4e6cdb462087f2ad10226b67b0.png" alt="在这里插入图片描述"><br>大致就这样，这是网图，复制A4BVVP……-VMLAWS    即可</p><h2 id="9-打开Typora输入邮箱和生成的序列号进行激活"><a href="#9-打开Typora输入邮箱和生成的序列号进行激活" class="headerlink" title="9.打开Typora输入邮箱和生成的序列号进行激活"></a>9.打开Typora输入邮箱和生成的序列号进行激活</h2><p>序列号输入生成的码，&#x3D;&#x3D;邮箱输入<strong><a href="mailto:&#99;&#114;&#97;&#99;&#x6b;&#x40;&#x65;&#x78;&#97;&#x6d;&#112;&#108;&#101;&#x2e;&#99;&#111;&#109;">&#99;&#114;&#97;&#99;&#x6b;&#x40;&#x65;&#x78;&#97;&#x6d;&#112;&#108;&#101;&#x2e;&#99;&#111;&#109;</a></strong>&#x3D;&#x3D;特别注意邮箱要输入这个别输入自己的<br>然后复制秘钥填写就可以激活如上图<br><code>教程结束，你们的好评和支持是作者写博客最大的动力！</code></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>欢迎来到我的世界</title>
+      <link href="/post/b9fb84c9.html"/>
+      <url>/post/b9fb84c9.html</url>
+      
+        <content type="html"><![CDATA[<p>欢迎来到我的世界，你准备好了吗</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>HTML介绍</title>
+      <link href="/post/da3677d8.html"/>
+      <url>/post/da3677d8.html</url>
+      
+        <content type="html"><![CDATA[<p>HTML的全称为超文本标记语言，是一种标记语言。它包括一系列标签．通过这些标签可以将网络上的文档格式统一，使分散的Internet资源连接为一个逻辑整体。HTML文本是由HTML命令组成的描述性文本，HTML命令可以说明文字，图形、动画、声音、表格、链接等。<br>超文本是一种组织信息的方式，它通过超级链接方法将文本中的文字、图表与其他信息媒体相关联。这些相互关联的信息媒体可能在同一文本中，也可能是其他文件，或是地理位置相距遥远的某台计算机上的文件。这种组织信息方式将分布在不同位置的信息资源用随机方式进行连接，为人们查找，检索信息提供方便。 [1] </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> html </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 标签2 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Python</title>
+      <link href="/post/eef33e53.html"/>
+      <url>/post/eef33e53.html</url>
+      
+        <content type="html"><![CDATA[<p>Python由荷兰数学和计算机科学研究学会的吉多·范罗苏姆于1990年代初设计，作为一门叫做ABC语言的替代品。Python提供了高效的高级数据结构，还能简单有效地面向对象编程。Python语法和动态类型，以及解释型语言的本质，使它成为多数平台上写脚本和快速开发应用的编程语言，随着版本的不断更新和语言新功能的添加，逐渐被用于独立的、大型项目的开发。<br>Python解释器易于扩展，可以使用C语言或C++（或者其他可以通过C调用的语言）扩展新的功能和数据类型。Python也可用于可定制化软件中的扩展程序语言。Python丰富的标准库，提供了适用于各个主要系统平台的源码或机器码</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 标签1 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>小程序轮播图</title>
+      <link href="/post/527719c3.html"/>
+      <url>/post/527719c3.html</url>
+      
+        <content type="html"><![CDATA[<p>&#x2F;* pages&#x2F;list&#x2F;list.wxss <em>&#x2F;<br>.swiper-container{<br>  &#x2F;</em> 轮播图容器的高度  *&#x2F;<br>    height: 150px;<br>}</p><p>.item{<br>  height: 100px;<br>  line-height: 150px;<br>  text-align: center;<br>}</p><p>.swiper-item:nth-child(1).item{<br>  background-color: lightcoral;<br>}<br>.swiper-item:nth-child(2).item{<br>  background-color: lightgreen;<br>}<br>.swiper-item:nth-child(3).item{<br>  background-color: lightskyblue;<br>}</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 微信小程序开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 标签3 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>随记生活有感</title>
+      <link href="/post/e01ae8b6.html"/>
+      <url>/post/e01ae8b6.html</url>
+      
+        <content type="html"><![CDATA[<p>　　蹉跎岁月摧毁了一代又一代花容月貌，几度浮沉中，生命静止，地球亦可消失，几千年来的积淀，话却也只落得个消失的下场。固然我们这一代人是何其幸运，免了被毁灭的痛苦。那么在有生之年造福于我们的子孙后代又未尝不可;世间万物如此美好，谁人又肯丢弃?功利社会里，谁人又做得到放空的洒脱?战乱年代里，谁人又肯牺牲掉自己性命来成全其他，无私的保卫国土?却还不是在哪个污浊的空气里苟活。<br>　　每个夜幕降临下，任凭思绪飞的老远。有多少人在欢度这样良宵，诚然 ，又有多少人在这样的“良宵”里摸索，挣扎;防守着最后一道道德底线。喧嚣街市里的夜晚依旧是迷人的，远不似乡间那般的阴沉、冷清。<br>　　昏暗的霓虹灯下，纵然也是有蓬垢着满头青丝，衣冠不整的酗酒者的，东跨一步，西指一下，谩骂着一天的不幸，乎而仰天长啸，乎而低首沉思，或者干脆顺势一头扎向有电杆儿的地面，背倚靠在生硬的电线杆儿上两腿叉开，似乎酒精的麻醉让他全然不晓得电杆的坚硬，一会儿便去约了周公，鼾声阵阵。<br>　　行色匆匆，高跟皮靴踩得水泥地板咚咚作响的粉红女郎，脸搽上一层厚厚的白粉，像是刚刚粉刷的光滑墙面，铺在脸上净不显得那么光滑，反而是苍白而极不自然，一张血盆大口在这样的深夜里像菜市场大妈吆喝着打电话，声音久久的回荡在顶头的星空之中，一阵风似的飘过，身上的香水味儿久久的缭绕在空中，给本就五味杂陈的街市又增添了那么一剂气味儿。<br>　　尽管是在凌晨，依然会看到佝偻着的老人，握着粗糙的扫把，拖着沉重的大板车，除清一天残留下的污垢，终日的劳作早已练就一身不怕风霜雨露，严寒酷暑的本领，皮肤早已被太阳灼伤，白织灯下的身影 却越来越小，越来越小……他们即便不是为了街市里的人方便而是为了零星的工资，必然也要受到任何一个行业的尊重的。几十年如一日的坚守在尘土飞扬的大街上，又岂是你我能承受的，就这样默默地在黑夜里咀嚼着生活的艰辛。<br>　　高档酒店里，灯火通明，必然是有高官们的会晤。一张精致而锃亮的玻璃圆桌，满满的一大桌子佳肴，燕窝鱼翅，鸡鸭烧鹅，可谓色香味俱全，一双浑圆的臂膀不住的在桌上挑来拣去，一会儿朝这个惺惺作态，一会儿向那个龇牙咧嘴，满脸的狰狞。大腹便便的局长更是谈笑风生，一手摸着妓女纤细的腰部，一手拿着筷子，眼睛却扫视着全桌人，好似有三头六臂。全然不知这样的暴殄天物是要遭受天遣的。派场，赴宴，饭桌便是他们的生活，他们享受，他们热爱。<br>　　然而，生活从来不会停滞不前，岁月依旧是人类杀手，它带走了多少人的那份纯真。那些天真无邪的往事，那些年的浪漫爱情，那些幼稚可笑的行为。却也掩饰了多少不为人知的辛酸过往，藏匿了多少丑陋嘴脸。然而，是不该惧怕的，断然束手无策，但可作奋斗的是在有限的生命里做诸多有意义的事罢，或许保持一颗本真的心态就尤为重要了，我是热爱生活的，我是感谢无情岁月的，它让我更加沉淀，更加丰腴，更加无阻。那么，努力的去泰然看待世间的一切就显得那么强壮有力了，虚虚无无，真真假假，果真就凭借一双深眸吗?固然是要用心聆听的。<br><img src="https://img-blog.csdnimg.cn/f89b761f7c114b65a52bb91fd98653e5.png" alt="生活有感"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>后端</title>
+      <link href="/post/8cfcd0f4.html"/>
+      <url>/post/8cfcd0f4.html</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://picgo123.oss-cn-beijing.aliyuncs.com/img/7zdaeH5RWTOCPuB.jpg" alt="StockSnap_TTSZNHYKJD.jpg"></p><p>软件应用程序就像冰山一样。用户看到的只是应用程序的一部分——在大多数情况下——应用程序的最大部分是看不到的。这就是令人难以捉摸又神秘的“后端”。</p><p>　　在Web开发的篇章中，我们主要讨论Web开发，因为它涉及与最终用户的直接互动——我们可以称之为“前端Web开发”。</p><p>　　在大多数应用中，非用户接口代码比用户接口代码多得多。复杂系统是在后台发生的各种使其工作的逻辑。</p><p>　　我们需要存储和检索数据，需要遵循业务逻辑和规则，并且需要对结果进行预测。所有这一切都发生在幕后。</p><p>　　后端开发人员是这样的开发人员。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 后端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 标签4 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
